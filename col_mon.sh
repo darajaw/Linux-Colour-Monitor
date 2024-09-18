@@ -12,7 +12,7 @@ RESET="\033[0m"
 # top: grabs system data
 # -bn1: prints it as plain text
 cpu_usage=$(top -bn1 | grep "Cpu(s)" | awk -F'id,' '{print $1}' | awk '{print $NF}')
-echo "$cpu_stats"
+
 #get cpu usage
 
 # Check CPU usage and change color
